@@ -7,7 +7,7 @@
 		<key>Data structures in c and c++.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>5</integer>
 		</dict>
 		<key>determinant using recursion.xcscheme_^#shared#^_</key>
 		<dict>
@@ -17,12 +17,17 @@
 		<key>insub routine in LL.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>1</integer>
 		</dict>
 		<key>linked list.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>stacks using link list.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>testing.xcscheme_^#shared#^_</key>
 		<dict>

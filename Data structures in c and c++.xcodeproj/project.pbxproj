@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		951E3DC0291E053300477C30 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 951E3DBF291E053300477C30 /* main.cpp */; };
 		9529D62528E5EC0100376264 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9529D62428E5EC0100376264 /* main.cpp */; };
 		9561791B28F0540E0004EDE8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9561791A28F0540E0004EDE8 /* main.cpp */; };
 		959A5490290CFFE700C7E0F9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 959A548F290CFFE700C7E0F9 /* main.cpp */; };
@@ -15,6 +16,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		951E3DBB291E053300477C30 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		9529D61F28E5EC0100376264 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,6 +73,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		951E3DBD291E053300477C30 /* stacks using link list */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "stacks using link list"; sourceTree = BUILT_PRODUCTS_DIR; };
+		951E3DBF291E053300477C30 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9529D62128E5EC0100376264 /* Data structures in c and c++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Data structures in c and c++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9529D62428E5EC0100376264 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9561791828F0540E0004EDE8 /* determinant using recursion */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "determinant using recursion"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +88,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		951E3DBA291E053300477C30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9529D61E28E5EC0100376264 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,6 +133,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		951E3DBE291E053300477C30 /* stacks using link list */ = {
+			isa = PBXGroup;
+			children = (
+				951E3DBF291E053300477C30 /* main.cpp */,
+			);
+			path = "stacks using link list";
+			sourceTree = "<group>";
+		};
 		9529D61828E5EC0100376264 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +149,7 @@
 				959A548E290CFFE700C7E0F9 /* linked list */,
 				959A5499290EAB6100C7E0F9 /* testing */,
 				959A54A4290EB9E900C7E0F9 /* insub routine in LL */,
+				951E3DBE291E053300477C30 /* stacks using link list */,
 				9529D62228E5EC0100376264 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -134,6 +162,7 @@
 				959A548D290CFFE700C7E0F9 /* linked list */,
 				959A5498290EAB6100C7E0F9 /* testing */,
 				959A54A3290EB9E900C7E0F9 /* insub routine in LL */,
+				951E3DBD291E053300477C30 /* stacks using link list */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,6 +210,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		951E3DBC291E053300477C30 /* stacks using link list */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 951E3DC3291E053300477C30 /* Build configuration list for PBXNativeTarget "stacks using link list" */;
+			buildPhases = (
+				951E3DB9291E053300477C30 /* Sources */,
+				951E3DBA291E053300477C30 /* Frameworks */,
+				951E3DBB291E053300477C30 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "stacks using link list";
+			productName = "stacks using link list";
+			productReference = 951E3DBD291E053300477C30 /* stacks using link list */;
+			productType = "com.apple.product-type.tool";
+		};
 		9529D62028E5EC0100376264 /* Data structures in c and c++ */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9529D62828E5EC0100376264 /* Build configuration list for PBXNativeTarget "Data structures in c and c++" */;
@@ -275,6 +321,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					951E3DBC291E053300477C30 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					9529D62028E5EC0100376264 = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -310,11 +359,20 @@
 				959A548C290CFFE700C7E0F9 /* linked list */,
 				959A5497290EAB6100C7E0F9 /* testing */,
 				959A54A2290EB9E900C7E0F9 /* insub routine in LL */,
+				951E3DBC291E053300477C30 /* stacks using link list */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		951E3DB9291E053300477C30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				951E3DC0291E053300477C30 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9529D61D28E5EC0100376264 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,6 +416,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		951E3DC1291E053300477C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		951E3DC2291E053300477C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		9529D62628E5EC0100376264 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -550,6 +626,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		951E3DC3291E053300477C30 /* Build configuration list for PBXNativeTarget "stacks using link list" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				951E3DC1291E053300477C30 /* Debug */,
+				951E3DC2291E053300477C30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9529D61C28E5EC0100376264 /* Build configuration list for PBXProject "Data structures in c and c++" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

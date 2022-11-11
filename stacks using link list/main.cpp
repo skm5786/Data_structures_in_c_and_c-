@@ -1,55 +1,46 @@
-//queues using linked list
 #include <iostream>
 using namespace::std;
 class Node{
 public:
     int data;
-    Node* next;
+    Node* next=nullptr;
 };
-class qll:protected Node{
-    Node* front=nullptr;
-    Node* rear=nullptr;
+class sll:protected Node{
+    Node* top=nullptr;
+
 public:
     bool empty(){
-        if (front==nullptr) {
+        if (top==nullptr) {
             return true;
         } else {
             return false;
         }
     }
-    int remove(){
-        Node* p=new Node();
+    int pop(){
         int x;
         if (empty()) {
-            cout<<"queue is underflowed"<<endl;
+            cout<<"stack is underflowed"<<endl;
             exit(1);
         }
-            p=front;
-            x= p->data;
-            front=p->next;
-        if (front==nullptr) {
-            rear=nullptr;
-        }
-        delete p;
+        Node *p=top;
+        x=p->data;
+        top=p->next;
+        free(p);
         return x;
     }
-    void insert(int x){
+    void push(int x){
         Node *p=new Node();
         p->data=x;
-        p->next=nullptr;
-        if (rear==nullptr) {
-            front=p;
-        } else{
-            rear->next=p;}
-            rear=p;
-    }
+        p->next=top;
+        top=p;
+            }
 };
 int main(){
-    qll a;
+    sll a;
     int x=0,n;
     while (1) {
-        cout<<"enter 1 to insert an element"<<endl;
-        cout<<"enter 2 to remove an element"<<endl;
+        cout<<"enter 1 to push an element"<<endl;
+        cout<<"enter 2 to pop an element"<<endl;
         cout<<"enter 3 to exit"<<endl;
         cin>>x;
         
@@ -57,10 +48,11 @@ int main(){
             case 1:
                 cout<<"enter your element  ";
                 cin>>n;
-                a.insert(n);
+                a.push(n);
+                cout<<n<<" is pushed on stack"<<endl;
                 break;
             case 2:
-                cout<<"removed element is: "<<a.remove()<<endl;;
+                cout<<"popped element is: "<<a.pop()<<endl;
                 break;
             case 3:
                 exit(1);
@@ -71,5 +63,4 @@ int main(){
         }
     }
     return 0;
-
 }
