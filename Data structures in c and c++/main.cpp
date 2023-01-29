@@ -60,7 +60,7 @@ int main(){
                 a.insert(n);
                 break;
             case 2:
-                cout<<"removed element is: "<<a.remove()<<endl;;
+                cout<<"removed element is: "<<a.remove()<<endl;
                 break;
             case 3:
                 exit(1);
